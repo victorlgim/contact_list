@@ -5,18 +5,17 @@ import { UsersRepository } from './repositories/users.repository';
 import { UsersPrismaRepository } from './repositories/prisma/users.prisma.repository';
 import { PrismaService } from 'src/database/prisma.service';
 
-
 @Module({
   controllers: [UsersController],
-  
+
   providers: [
-    UsersService, 
+    UsersService,
     PrismaService,
     {
       provide: UsersRepository,
-      useClass: UsersPrismaRepository
-    }
+      useClass: UsersPrismaRepository,
+    },
   ],
-  exports: [UsersService]
+  exports: [UsersService],
 })
 export class UsersModule {}
