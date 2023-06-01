@@ -10,6 +10,7 @@ async function bootstrap() {
   .setTitle('Contact List')
   .setDescription('add your contacts')
   .setVersion('1.0')
+  .addBearerAuth()
   .build()
 
   const document = SwaggerModule.createDocument(app, config)
