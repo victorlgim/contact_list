@@ -1,13 +1,14 @@
 FROM node:14
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
 COPY prisma ./prisma
-
 COPY package*.json ./
 
-RUN npm ci --only=production
+RUN npm install --production
 
-EXPOSE 3000
+COPY . .
+
+RUN npm run build
 
 CMD ["node", "dist/main"]
