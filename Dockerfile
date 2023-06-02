@@ -5,7 +5,6 @@ WORKDIR /usr/src/app
 COPY prisma ./prisma
 
 COPY package*.json ./
-COPY dist ./dist
 
 RUN npm ci --only=production
 
