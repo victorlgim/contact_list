@@ -1,0 +1,5 @@
+version: 1
+name: Contact List
+type: web
+buildCommand: npm ci && npm run build
+startCommand: npm run start:prod
