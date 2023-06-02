@@ -8,7 +8,7 @@ COPY package*.json ./
 
 COPY tsconfig*.json ./
 
-COPY dist ./dist
+COPY dist/ ./dist/
 
 RUN npm install
 
