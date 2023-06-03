@@ -2,11 +2,11 @@ FROM node:18.13.0
 
 WORKDIR /usr/src/app
 
-COPY prisma ./prisma
+COPY ./prisma ./prisma
 COPY package*.json ./
 COPY tsconfig*.json ./
 COPY src/. /usr/src/app/src/
-COPY .env ./
+COPY ./.env ./
 
 RUN npm install
 RUN npm run build
