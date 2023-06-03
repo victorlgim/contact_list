@@ -1,0 +1,13 @@
+
+node_modules/
+dist/
+prisma/
+
+
+.env
+.env.example
+.env.local
+
+.git
+.gitignore
+.dockerignore
