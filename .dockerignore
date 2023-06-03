@@ -5,7 +5,6 @@ prisma/
 
 
 .env
-.env.example
 .env.local
 
 .git
