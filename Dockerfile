@@ -13,4 +13,8 @@ RUN npm run build
 
 EXPOSE 3000
 
-CMD ["./start.sh"]
+ENV NODE_ENV=production
+ENV PORT=3000
+
+
+CMD ["node", "./dist/main.js"]
