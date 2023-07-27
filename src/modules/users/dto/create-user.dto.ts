@@ -30,8 +30,4 @@ export class CreateUserDto {
     groups: ['transform'],
   })
   password: string;
-
-  @IsString()
-  @IsNotEmpty()
-  phone: string;
 }
